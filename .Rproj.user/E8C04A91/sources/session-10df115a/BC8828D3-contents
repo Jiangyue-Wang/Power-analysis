@@ -26,9 +26,9 @@ power_test <- function(effect, sd, sample_size){
   for (i in 1:999) {
     # Have to re-create the data EVERY TIME or it will just be the same data over and over
     tib <- tibble(
-      X = runif(sample_size, 0, 1)
+      X = rep(c(0,1),sample_size)
     ) %>%
-      mutate(Y = effect*X + rnorm(sample_size, mean = 0, sd = sd))
+      mutate(Y = effect*X + rnorm(sample_size*2, mean = 0, sd = sd))
     
     # Run the analysis
     model <- feols(Y ~ X, data = tib, se = 'hetero')
@@ -54,7 +54,7 @@ for(i in 1:3){
 
 write.csv(post_power,"results/03-power.csv",row.names = F)
 # calculate needed sample size----
-sample_sizes_to_try <- c(5,7,10,15,20,25,30)
+sample_sizes_to_try <- c(2,3,4,5,7,10,15,20,30,40,50,100,200,300,400,500)
 
 for(i in 1:3){
   w_eff <- Distri_params$woody[i+1]-Distri_params$woody[1]
