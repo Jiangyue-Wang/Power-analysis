@@ -14,22 +14,34 @@ Detailed results see [here](results/03-power.csv).
 
 ![Woody, Light Group versus Control](results/03_woody_CL.png)
 
+Detailed data form can be found [here](results/03_woody_CL.csv). Minimum sample size (#Blocks) is 3.
+
 -   Woody, Moderate \~ Control
 
 ![Woody, Moderate Group versus Control](results/03_woody_CM.png)
+
+Detailed data form can be found [here](results/03_woody_CM.csv). Minimum sample size (#Blocks) is 3.
 
 -   Woody, Intensive \~ Control
 
 ![Woody, Intensive Group versus Control](results/03_woody_CI.png)
 
+Detailed data form can be found [here](results/03_woody_CI.csv). Minimum sample size (#Blocks) is 3.
+
 -   Flower, Light \~ Control
 
 ![Flower, Light Group versus Control](results/03_flowr_CL.png)
+
+Detailed data form can be found [here](results/03_flowr_CL.csv). Minimum sample size (#Blocks) is 100.
 
 -   Flower, Moderate \~ Control
 
 ![Flower, Moderate Group versus Control](results/03_flowr_CM.png)
 
+Detailed data form can be found [here](results/03_flowr_CM.csv). Minimum sample size (#Blocks) is 30.
+
 -   Flower, Intensive \~ Control
 
 ![Flower, Intensive Group versus Control](results/03_flowr_CI.png)
+
+Detailed data form can be found [here](results/03_flowr_CI.csv). Minimum sample size (#Blocks) is 4.

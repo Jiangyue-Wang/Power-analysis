@@ -112,3 +112,13 @@ for(i in 1:3){
   ggsave(paste0("results/03_flowr_",post_power$Group[i],".png"), width = 6, height = 4) # store plot
   saveRDS(power_results,paste0("results/03_flowr_",post_power$Group[i],".rds")) # store results
 }
+
+
+# read rds and transform into csv
+file <- dir("results") %>% as_tibble() %>% filter(str_detect(value, "rds"))
+
+for(i in 1: nrow(file)){
+  tmp <- readRDS(paste0("results/", file$value[i]))
+  filename <- str_sub(file$value[i], 1, -4)
+  write.csv(tmp, paste0("results/",filename,"csv"), row.names = F)
+}
