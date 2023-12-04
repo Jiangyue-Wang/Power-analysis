@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/eap.2441,
+author = {Kormann, Urs G. and Stokely, Thomas D. and Verschuyl, Jake and Kroll, Andrew J. and Harris, Scott and Maguire, Doug and Mainwaring, Doug and Rivers, James W. and Betts, Matthew G.},
+title = {Reconciling biodiversity with timber production and revenue via an intensive forest management experiment},
+journal = {Ecological Applications},
+volume = {31},
+number = {8},
+pages = {e02441},
+keywords = {biodiversity, economic analysis, forest management, intensive forestry, land expectation value, plantations, timber yield},
+doi = {https://doi.org/10.1002/eap.2441},
+url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/eap.2441},
+eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/eap.2441},
+abstract = {Abstract Understanding how land-management intensification shapes the relationships between biodiversity, yield, and economic benefit is critical for managing natural resources. Yet, manipulative experiments that test how herbicides affect these relationships are scarce, particularly in forest ecosystems where considerable time lags exist between harvest revenue and initial investments. We assessed these relationships by combining 7 yr of biodiversity surveys (>800 taxa) and forecasts of timber yield and economic return from a replicated, large-scale experiment that manipulated herbicide application intensity in operational timber plantations. Herbicides reduced species richness across trophic groups (−18\%), but responses by higher-level trophic groups were more variable (0–38\% reduction) than plant responses (−40\%). Financial discounting, a conventional economic method to standardize past and future cash flows, strongly modified biodiversity–revenue relationships caused by management intensity. Despite a projected 28\% timber yield gain with herbicides, biodiversity–revenue trade-offs were muted when opportunity costs were high (i.e., economic discount rates ≥7\%). Although herbicides can drive biodiversity–yield trade-offs, under certain conditions, financial discounting provides opportunities to reconcile biodiversity conservation with revenue.},
+year = {2021}
+}
+

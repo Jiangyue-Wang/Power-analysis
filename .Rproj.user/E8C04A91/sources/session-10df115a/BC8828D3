@@ -3,7 +3,7 @@
     "path": "~/Desktop/Desktop - 江月王的MacBook Pro/phD/Research-Design/Power-analysis/src/03-0.05_intercept.R",
     "project_path": "src/03-0.05_intercept.R",
     "type": "r_source",
-    "hash": "3313312068",
+    "hash": "1339787916",
     "contents": "",
     "dirty": false,
     "created": 1701532227049.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "100,0",
-        "scrollLine": "86"
+        "cursorPosition": "112,95",
+        "scrollLine": "100"
     },
-    "folds": "",
-    "lastKnownWriteTime": 1701613607,
+    "folds": "23|45|46|0|\n",
+    "lastKnownWriteTime": 1701699949,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1701613607343,
+    "last_content_update": 1701699949914,
     "read_only": false,
     "read_only_alternatives": []
 }
