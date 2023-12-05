@@ -14,34 +14,43 @@ Detailed results see [here](results/03-power.csv).
 
 ![Woody, Light Group versus Control](results/03_woody_CL.png)
 
-Detailed data form can be found [here](results/03_woody_CL.csv). Minimum sample size (#Blocks) is 3.
+Detailed data form can be found [here](results/03_woody_CL.csv). Minimum sample size (#Blocks) is **3**.
 
 -   Woody, Moderate \~ Control
 
 ![Woody, Moderate Group versus Control](results/03_woody_CM.png)
 
-Detailed data form can be found [here](results/03_woody_CM.csv). Minimum sample size (#Blocks) is 3.
+Detailed data form can be found [here](results/03_woody_CM.csv). Minimum sample size (#Blocks) is **3**.
 
 -   Woody, Intensive \~ Control
 
 ![Woody, Intensive Group versus Control](results/03_woody_CI.png)
 
-Detailed data form can be found [here](results/03_woody_CI.csv). Minimum sample size (#Blocks) is 3.
+Detailed data form can be found [here](results/03_woody_CI.csv). Minimum sample size (#Blocks) is **3**.
 
 -   Flower, Light \~ Control
 
 ![Flower, Light Group versus Control](results/03_flowr_CL.png)
 
-Detailed data form can be found [here](results/03_flowr_CL.csv). Minimum sample size (#Blocks) is 100.
+Detailed data form can be found [here](results/03_flowr_CL.csv). 
+
+For further settling the exact value, I rerun the sample size from 90 to 110 one by one. Detailed data form can be found [here](results/03_flowr_finer_CL.csv). Minimum sample size (#Blocks) is **101**. Zoom-in plot shown below:
+
+![Flower, Light Group, Zoom-in](results/03_flowr_finer_CL.png)
 
 -   Flower, Moderate \~ Control
 
 ![Flower, Moderate Group versus Control](results/03_flowr_CM.png)
 
-Detailed data form can be found [here](results/03_flowr_CM.csv). Minimum sample size (#Blocks) is 30.
+Detailed data form can be found [here](results/03_flowr_CM.csv).
+
+For further settling the exact value, I rerun the sample size from 20 to 40 one by one. Detailed data form can be found [here](results/03_flowr_finer_CM.csv). Minimum sample size (#Blocks) is **22**. Zoom-in plot shown below:
+
+![Flower, Moderate Group, Zoom-in](results/03_flowr_finer_CM.png)
+
 
 -   Flower, Intensive \~ Control
 
 ![Flower, Intensive Group versus Control](results/03_flowr_CI.png)
 
-Detailed data form can be found [here](results/03_flowr_CI.csv). Minimum sample size (#Blocks) is 4.
+Detailed data form can be found [here](results/03_flowr_CI.csv). Minimum sample size (#Blocks) is **4**.

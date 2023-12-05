@@ -122,3 +122,63 @@ for(i in 1: nrow(file)){
   filename <- str_sub(file$value[i], 1, -4)
   write.csv(tmp, paste0("results/",filename,"csv"), row.names = F)
 }
+
+
+
+# As Light & Moderate groups of flowers are not showing the exact sample size needed for 80% power, I am running another sets of sample size gradient to better decide the exact value----
+
+
+
+  i = 1 # light group
+  sample_sizes_to_try <- seq(90,110,1)
+  #get effect sizes and sd
+  f_eff <- Distri_params$flowr[i+1]-Distri_params$flowr[1]
+  f_sd <- max(Distri_params$flowr_sd[1])
+  
+  #. flower light group power calculation
+  power_levels <- c()
+  for(j in 1: length(sample_sizes_to_try)){
+    power_levels[j] <- power_test(effect = f_eff, sd = f_sd, sample_size = sample_sizes_to_try[j])
+  }
+  power_results <- tibble(sample = sample_sizes_to_try,
+                          power = power_levels)
+  # plot curve
+  ggplot(power_results, 
+         aes(x = sample, y = power)) +
+    geom_line(color = 'red', size = 1.5) + 
+    # add a horizontal line at 90%
+    geom_hline(aes(yintercept = .8), linetype = 'dashed') + 
+    # Prettify!
+    theme_bw() + 
+    scale_y_continuous(labels = scales::percent) + 
+    labs(x = 'Sample Size', y = 'Power')
+  ggsave(paste0("results/03_flowr_finer_",post_power$Group[i],".png"), width = 6, height = 4) # store plot
+  saveRDS(power_results,paste0("results/03_flowr_finer_",post_power$Group[i],".rds")) # store results
+
+  
+  i = 2 # moderate group
+  sample_sizes_to_try <- seq(20,40,1)
+  #get effect sizes and sd
+  f_eff <- Distri_params$flowr[i+1]-Distri_params$flowr[1]
+  f_sd <- max(Distri_params$flowr_sd[1])
+  
+  #. flower moderate group power calculation
+  power_levels <- c()
+  for(j in 1: length(sample_sizes_to_try)){
+    power_levels[j] <- power_test(effect = f_eff, sd = f_sd, sample_size = sample_sizes_to_try[j])
+  }
+  power_results <- tibble(sample = sample_sizes_to_try,
+                          power = power_levels)
+  # plot curve
+  ggplot(power_results, 
+         aes(x = sample, y = power)) +
+    geom_line(color = 'red', size = 1.5) + 
+    # add a horizontal line at 90%
+    geom_hline(aes(yintercept = .8), linetype = 'dashed') + 
+    # Prettify!
+    theme_bw() + 
+    scale_y_continuous(labels = scales::percent) + 
+    labs(x = 'Sample Size', y = 'Power')
+  ggsave(paste0("results/03_flowr_finer_",post_power$Group[i],".png"), width = 6, height = 4) # store plot
+  saveRDS(power_results,paste0("results/03_flowr_finer_",post_power$Group[i],".rds")) # store results
+
