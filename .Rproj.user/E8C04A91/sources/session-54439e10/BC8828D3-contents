@@ -182,3 +182,20 @@ for(i in 1: nrow(file)){
   ggsave(paste0("results/03_flowr_finer_",post_power$Group[i],".png"), width = 6, height = 4) # store plot
   saveRDS(power_results,paste0("results/03_flowr_finer_",post_power$Group[i],".rds")) # store results
 
+# should also add zoom in map for the other 4
+file <- file[c(1,6,7,8),]
+for(i in 1: nrow(file)){
+    power_results <- readRDS(paste0("results/", file$value[i])) %>% filter(sample <= 10)
+    filename <- str_sub(file$value[i], 1, -5)
+    
+    ggplot(power_results, 
+           aes(x = sample, y = power)) +
+      geom_line(color = 'red', size = 1.5) + 
+      # add a horizontal line at 90%
+      geom_hline(aes(yintercept = .8), linetype = 'dashed') + 
+      # Prettify!
+      theme_bw() + 
+      scale_y_continuous(labels = scales::percent) + 
+      labs(x = 'Sample Size', y = 'Power')
+    ggsave(paste0("results/",filename,"_finer",".png"), width = 6, height = 4)
+}
